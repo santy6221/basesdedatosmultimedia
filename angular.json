@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "parcialBD"
+    }
+  },
+  "defaultProject": "parcialBD",
+  "cli": {
+    "analytics": "e9490dfc-b9af-49fd-8091-39d2e317c7d0"
+  }
 }

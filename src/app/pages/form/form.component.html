@@ -1,0 +1,34 @@
+<div class="container">
+    <form #myForm="ngForm">
+      <fieldset>
+        <div class="form-group">
+          <label for="nombreImg">Nombre</label>
+          <input type="text" class="form-control" name="nombreImg" id="nombreImg" placeholder="Nombre de la foto" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="imageCat">Categoría</label>
+          <select name="imageCat" id="imageCat" class="form-control" ngModel required>
+            <option value="Artes">Artes</option>
+            <option value="Moda">Moda</option>
+            <option value="Viajes">Viajes</option>
+            <option value="Gastronomía">Gastronomía</option>
+            <option value="Belleza">Belleza</option>
+            <option value="Decoración">Decoración</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="imageTag">Etiqueta</label>
+          <input type="text" class="form-control" name="imageTag" id="imageTag" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="author">Autór</label>
+          <input type="text" class="form-control" name="author" id="author" placeholder="Autór" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="image">Imagen</label>
+          <input type="file" class="form-control" id="image" name="image" ngModel required>
+        </div>
+      </fieldset>
+      <button id="submmitbtn" (click)="onSubmmit(myForm)" type="submmit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
